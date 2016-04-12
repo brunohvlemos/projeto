@@ -31,32 +31,25 @@ class templateCBV(View):
 
 
 class templateGenerics(TemplateView):
-    template_name = 'home.html'
+    
 
 
 
 class CadastrarGenerics(CreateView):
-    model = Livro
-    form_class = LivroForm
-    success_url = reverse_lazy('cadastrar generics')
-    template_name = "cadastro.html"
+    
 
 
 class DetalharGenerics(DetailView):
-    model = Livro
+    
 
 
 class ListarGenerics(ListView):
-    model = Livro
-    template_name = "lista.html"
+    
 
 
 class EditarGenerics(UpdateView):
-    model = Livro
-    fields = ['nome',]
-    success_url = reverse_lazy('listar generics')
+    
 
 
 class DeletarGenerics(DeleteView):
-    model = Livro
-    success_url = reverse_lazy('cadastrar generics')
+    
