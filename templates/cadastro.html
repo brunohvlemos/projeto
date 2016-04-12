@@ -1,0 +1,13 @@
+<h1>Cadastrar</h1>
+
+<form id="form-project" method="post" role="form">{%csrf_token%}
+  {% for campo in form %}
+    <div>
+      <div>
+        <label>{{campo.label}}</label>
+        {{campo}}
+      </div>
+    </div>
+  {% endfor %}
+  <button method="post" type="submit">Cadastrar</button>
+</form>
